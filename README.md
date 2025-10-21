@@ -1,112 +1,96 @@
-# 🌏 Tourist Attraction - เที่ยวไหนดี
+# 🌏 Tourist Attraction - "Where to Travel in Thailand"
 
-แอปพลิเคชันค้นหาสถานที่ท่องเที่ยวในประเทศไทย พร้อมระบบค้นหาด้วยคำสำคัญและแท็ก
+A web app for discovering travel destinations across Thailand with keyword and tag-based search.
 
-A tourist attraction search application that helps users discover travel destinations in Thailand with keyword and tag-based search functionality.
+---
 
-![Tourist Attraction App](https://img.shields.io/badge/React-19.1.1-blue) ![Express](https://img.shields.io/badge/Express-4.17.3-green) ![Tailwind](https://img.shields.io/badge/Tailwind-4.1.14-blue)
+## ✨ Features
 
-## ✨ คุณสมบัติ / Features
+- 🔍 **Smart Search** – Find attractions by name, description, or tags  
+- 🏷️ **Tag Filters** – Click any tag to refine search results  
+- 🖼️ **Gallery Display** – One main image + 3 sub-images  
+- 🔗 **Easy Sharing** – Copy attraction links directly  
+- ⚡ **Real-time Results** – Instant updates while typing  
 
-- 🔍 **ค้นหาสถานที่ท่องเที่ยว** - ค้นหาจากชื่อ คำอธิบาย และแท็ก
-- 🏷️ **กรองด้วยแท็ก** - คลิกที่แท็กเพื่อเพิ่มในการค้นหา
-- 🖼️ **แสดงรูปภาพ** - รูปภาพหลักและรูปเสริม 3 รูป
-- 🔗 **แชร์ลิงก์** - คัดลอกลิงก์สถานที่ท่องเที่ยวได้ง่าย
-- ⚡ **Real-time Search** - ค้นหาแบบเรียลไทม์ไม่ต้องกดปุ่มค้นหา
+---
 
-## 🛠 เทคโนโลยี / Tech Stack
+## 🛠 Tech Stack
 
 ### Frontend
-- **React 19.1.1** - JavaScript library สำหรับสร้าง UI
-- **Vite 7.1.7** - Build tool และ development server
-- **Tailwind CSS 4.1.14** - Utility-first CSS framework
-- **Axios 1.12.2** - HTTP client สำหรับเรียก API
+- **React 19.1.1** – UI library  
+- **Vite 7.1.7** – Build tool & dev server  
+- **Tailwind CSS 4.1.14** – Utility-first styling  
+- **Axios 1.12.2** – HTTP client  
 
 ### Backend
-- **Express.js 4.17.3** - Web framework สำหรับ Node.js
-- **CORS** - เปิดใช้งาน Cross-Origin Resource Sharing
-- **Body Parser** - Parse request body
-- **Nodemon** - Auto-restart server เมื่อมีการแก้ไขโค้ด
+- **Express.js 4.17.3** – Node.js web framework  
+- **CORS** – Cross-Origin support  
+- **Body Parser** – Handle JSON requests  
+- **Nodemon** – Auto-restart on code change  
 
-## 📦 การติดตั้ง / Installation
+---
 
-### ความต้องการของระบบ / Prerequisites
+## 📦 Installation
 
-- Node.js (version 14 หรือสูงกว่า)
-- npm หรือ yarn
+### Prerequisites
+- Node.js 14+  
+- npm or yarn  
 
-### ขั้นตอนการติดตั้ง / Setup Steps
+### Setup
 
-1. **Clone โปรเจค / Clone the repository**
 ```bash
+# Clone the project
 git clone <repository-url>
 cd tourist-attraction
-```
 
-2. **ติดตั้ง dependencies สำหรับ Server**
-```bash
+# Install backend dependencies
 cd server
 npm install
-```
 
-3. **ติดตั้ง dependencies สำหรับ Client**
-```bash
+# Install frontend dependencies
 cd ../client
 npm install
-```
 
-## 🚀 การใช้งาน / Usage
 
-### เริ่มต้น Server (Backend)
+## 🚀 Usage
+
+### Start Backend
 
 ```bash
 cd server
 npm start
 ```
 
-Server จะทำงานที่: `http://localhost:4001`
+Server runs at: http://localhost:4001
 
-### เริ่มต้น Client (Frontend)
+### Start Frontend
 
 ```bash
 cd client
 npm run dev
 ```
 
-Client จะทำงานที่: `http://localhost:5173` (หรือ port อื่นที่ Vite กำหนดให้)
+Frontend runs at: http://localhost:5173
 
-### สคริปต์อื่นๆ / Other Scripts
 
-**Client:**
-```bash
-npm run build      # สร้าง production build
-npm run preview    # ดู production build ในเครื่อง
-npm run lint       # ตรวจสอบโค้ดด้วย ESLint
-```
-
-**Server:**
-```bash
-npm start          # เริ่มต้น server ด้วย nodemon
-```
-
-## 📁 โครงสร้างโปรเจค / Project Structure
+## 📁 Project Structure
 
 ```
 tourist-attraction/
-├── client/                    # Frontend React application
+├── client/                    
 │   ├── src/
 │   │   ├── components/
-│   │   │   └── TravelSearch.jsx    # หน้าค้นหาและแสดงสถานที่ท่องเที่ยว
-│   │   ├── App.jsx                 # Main App component
-│   │   ├── main.jsx                # Entry point
-│   │   └── index.css               # Global styles
-│   ├── public/                     # Static files
+│   │   │   └── TravelSearch.jsx    
+│   │   ├── App.jsx                
+│   │   ├── main.jsx          
+│   │   └── index.css       
+│   ├── public/               
 │   ├── package.json
 │   └── vite.config.js
 │
-└── server/                    # Backend Express server
-    ├── app.js                 # Express application และ API routes
-    ├── db.js                  # ข้อมูลสถานที่ท่องเที่ยว (mock database)
+└── server/                 
+    ├── app.js                
+    ├── db.js                  
     └── package.json
 ```
 
@@ -114,14 +98,14 @@ tourist-attraction/
 
 ### `GET /trips`
 
-ค้นหาสถานที่ท่องเที่ยวด้วยคำสำคัญ
+Search for attractions by keyword.
 
 **Query Parameters:**
-- `keywords` (required) - คำสำคัญในการค้นหา (คั่นด้วยช่องว่างสำหรับหลายคำ)
+- keywords – space-separated search terms
 
-**ตัวอย่างการใช้งาน:**
+**Example:**
 ```bash
-GET http://localhost:4001/trips?keywords=เกาะ ทะเล
+GET http://localhost:4001/trips?keywords=เกาะ
 ```
 
 **Response:**
@@ -140,20 +124,20 @@ GET http://localhost:4001/trips?keywords=เกาะ ทะเล
 }
 ```
 
-## 🎯 การทำงานของระบบ / How It Works
+## 🎯 How It Works
 
-1. **การค้นหา** - ผู้ใช้พิมพ์คำค้นหาในช่องค้นหา
-2. **Real-time API Call** - ระบบจะเรียก API ทุกครั้งที่มีการเปลี่ยนแปลงคำค้นหา
-3. **การกรองข้อมูล** - Backend จะค้นหาจาก title, description และ tags
-4. **แสดงผล** - แสดงผลลัพธ์พร้อมรูปภาพและข้อมูล
-5. **การคลิกแท็ก** - คลิกที่แท็กใดๆ จะเพิ่มแท็กนั้นในคำค้นหา
+1. User types in a keyword
+2. API fetches results in real-time
+3. Backend filters data by title, description, and tags
+4. UI displays results with images and tags
+5. Clicking a tag adds it to the search query
 
 ## 🎨 UI/UX Features
 
-- ✅ Modern และสะอาดตา
-- ✅ Loading states และ error handling
-- ✅ Smooth transitions และ hover effects
-- ✅ Copy to clipboard สำหรับแชร์ลิงก์
+- ✅ Clean & modern interface
+- ✅ Loading and error states
+- ✅ Smooth transitions & hover effects
+- ✅ Copy-to-clipboard sharing
 
 ## 📝 License
 
