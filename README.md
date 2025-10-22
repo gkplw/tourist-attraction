@@ -2,6 +2,8 @@
 
 A web app for discovering travel destinations across Thailand with keyword and tag-based search.
 
+![Screenshot 2025-10-22 125220](https://github.com/user-attachments/assets/157cdba0-69a1-49f0-9ddb-2b4aff89387e)
+
 ---
 
 ## ✨ Features
@@ -138,7 +140,3 @@ GET http://localhost:4001/trips?keywords=เกาะ
 - ✅ Loading and error states
 - ✅ Smooth transitions & hover effects
 - ✅ Copy-to-clipboard sharing
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
