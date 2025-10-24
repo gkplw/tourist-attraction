@@ -9,7 +9,7 @@ function TravelSearch() {
   async function getData() {
     try {
       const response = await axios.get(
-        `http://localhost:4001/trips?keywords=${text}`
+        `https://tourist-attraction-7tro.vercel.app/trips?keywords=${text}`
       );
       setData(response.data.data);
       setErrorMessage(null);
