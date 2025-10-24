@@ -6,6 +6,12 @@ A web app for discovering travel destinations across Thailand with keyword and t
 
 ---
 
+## Deployed Website
+
+You can check the project at: https://tourist-attraction-amber.vercel.app/
+
+---
+
 ## ✨ Features
 
 - 🔍 **Smart Search** – Find attractions by name, description, or tags  
