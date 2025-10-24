@@ -32,49 +32,6 @@ A web app for discovering travel destinations across Thailand with keyword and t
 
 ---
 
-## 📦 Installation
-
-### Prerequisites
-- Node.js 14+  
-- npm or yarn  
-
-### Setup
-
-```bash
-# Clone the project
-git clone <repository-url>
-cd tourist-attraction
-
-# Install backend dependencies
-cd server
-npm install
-
-# Install frontend dependencies
-cd ../client
-npm install
-
-
-## 🚀 Usage
-
-### Start Backend
-
-```bash
-cd server
-npm start
-```
-
-Server runs at: http://localhost:4001
-
-### Start Frontend
-
-```bash
-cd client
-npm run dev
-```
-
-Frontend runs at: http://localhost:5173
-
-
 ## 📁 Project Structure
 
 ```
@@ -94,36 +51,6 @@ tourist-attraction/
     ├── app.js                
     ├── db.js                  
     └── package.json
-```
-
-## 🔌 API Endpoints
-
-### `GET /trips`
-
-Search for attractions by keyword.
-
-**Query Parameters:**
-- keywords – space-separated search terms
-
-**Example:**
-```bash
-GET http://localhost:4001/trips?keywords=เกาะ
-```
-
-**Response:**
-```json
-{
-  "data": [
-    {
-      "eid": "1",
-      "title": "คู่มือเที่ยวเกาะช้าง...",
-      "description": "วันว่างนี้ไปเที่ยวเกาะช้างกัน...",
-      "url": "https://www.wongnai.com/trips/...",
-      "photos": ["url1", "url2", "url3", "url4"],
-      "tags": ["เกาะ", "ทะเล", "จุดชมวิว", "ธรรมชาติ", "ตราด"]
-    }
-  ]
-}
 ```
 
 ## 🎯 How It Works
